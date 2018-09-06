@@ -1,0 +1,122 @@
+/*-------map-------*/
+#map { 
+	position:absolute; 
+	top:0; 
+	bottom:0; 
+	width: 100%;
+	min-height: 300px;
+    /*margin: 0 1.2%;*/
+    border-radius: 10px;
+}
+
+/*-------Navbar-------*/
+.bg-light {
+	background-color: #FFFFFF !important;
+	box-shadow: 0 2px 7px 0 rgba(0,0,0,0.15);
+}
+/*.navbar-login
+{
+	width: auto;
+	padding: 10px;
+	padding-bottom: 0px;
+}*/
+
+.navbar-login-session
+{
+	padding: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.icon-size
+{
+	font-size: 40px;
+	vertical-align: middle;
+}
+.avater
+{
+	width: 30px;
+}
+
+/*-------Accordion-------*/
+.accordion .card-header .card-title:after {
+    font-family: 'icomoon';  
+    content: "\e947";
+    float: right; 
+    margin-top: .5rem;
+}
+.accordion .card-header.collapsed .card-title:after {
+    /* symbol for "collapsed" panels */
+    content: "\e948"; 
+    margin-top: .5rem;
+	
+}
+
+.accordion .card-header #card-title-1:before{
+    font-family: 'icomoon';  
+    content: "\e900";
+    float: left; 
+    margin-top: .1rem;
+	font-size:24px;
+}
+
+.accordion .card-header #card-title-2:before{
+    font-family: 'icomoon';  
+    content: "\e901";
+    float: left; 
+    margin-top: .1rem;
+	font-size:24px;
+}
+
+.accordion .card-header #card-title-3:before{
+    font-family: 'icomoon';  
+    content: "\e902";
+    float: left; 
+    margin-top: .1rem;
+	font-size:24px;
+}
+
+.card-title{
+   font-size: 12px;
+}
+
+
+.card-subtitle{
+   margin-left: 2rem;
+   font-size: 20px;
+}
+
+.accordion{
+	border-radius: 50%;
+}
+.accordion-header{
+	/*height:70px;*/
+	background-color:#dcdfe0;
+	color:#37474f;
+	text-align: center;
+}
+.accordion-header span{
+	/*line-height:70px;*/
+    vertical-align: middle;
+    display: inline-block;
+}
+.accordion-header .title1{
+	font-weight: bold;
+	font-size:70px;
+    vertical-align: middle;
+    display: inline-block;
+	/*display: inline-block;
+    background-color: green;
+    line-height: 34px;
+    height:35px;*/
+}
+.accordion-header .title2{
+	font-size:20px;
+    /*vertical-align: middle;
+    display: inline-block;*/
+}
+
+.accordion-icon{
+	font-size: 24px;
+	vertical-align: middle;
+}

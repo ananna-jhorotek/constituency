@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <title>Constituency Data</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- font css -->
+    <link rel="stylesheet" href="fonts/style.css">
+	<!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+	
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
+	
+	<style>
+
+	</style>
+  </head>
+  
+  <body>
+	
+		<div id='map'></div>
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+		 
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  
+			<form class="form-inline">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search by constituency">
+					<div class="input-group-append">
+					  <button class="btn btn-success" type="button">
+						<i class="icon-icon_action_search"></i>
+					  </button>
+					</div>
+				</div>
+			</form>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			<ul class="navbar-nav ml-auto navbar-right">
+			  <li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" style="border-right:1px solid #aaa;" data-toggle="dropdown">				
+                        <!--span class="icon-icon_action_account_circle icon-size"></span--> 
+						<img class="avater" src="https://ui-avatars.com/api/?name=Applseed+Francis&rounded=true&background=0D8ABC&color=fff" alt="avater">
+                        <span>Applseed Francis</span>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+				</a>
+				<!--ul class="dropdown-menu dropdown-menu-right">
+					<li>
+						<div class="navbar-login">
+							<div class="row">
+								<div class="col-md-12">
+									<p class="text-center">
+										<span class="icon-icon_action_account_circle icon-size"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<div class="navbar-login navbar-login-session">
+							<div class="row">
+								<div class="col-md-12">
+									<p>
+										<a href="#" class="btn btn-danger btn-block">Sign out</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul-->
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  <span class="navbar-toggler-icon"></span>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="#">Editor Area</a>
+				  <a class="dropdown-item" href="#">Admin Area</a>
+				  <a class="dropdown-item" href="#">Verifier Area</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+		
+		
+		<!--div class="container-fluid">
+		  <div class="row">
+			<div class="col-md-3 mt-3">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search by constituency">
+					<div class="input-group-append">
+					  <button class="btn btn-success" type="button">
+						<i class="icon-icon_action_search"></i>
+					  </button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 offset-md-6 mt-3">
+
+    <a href="#">
+        <span class="header-username">Chuck Norris</span>
+        <img src="http://placehold.it/30x30" class="avatar img-responsive">
+    </a>
+
+			</div>
+		  </div>
+		</div-->
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 mt-3">
+				<div id="accordion" class="accordion">
+					<div class="card mb-0">
+						<div class="accordion-header">
+							<span class="title1">5</span>
+							<span class="title2">Dinajpur</span>
+						</div>
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+							<!--span class="icon-icon_social_person_outline accordion-icon"></span--> 
+							<a class="card-title" id="card-title-1">
+								Item 1
+							</a>
+							 <h6 class="card-subtitle">Card subtitle</h6>
+						</div>
+						<div id="collapseOne" class="collapse" data-parent="#accordion" >
+							<div class="card-body">Anim pariatur</div>
+						</div>
+						<div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							<!--span class="icon-icon_social_person_outline accordion-icon"></span--> 
+							<a class="card-title" id="card-title-2">
+							  Item 2
+							</a>
+							<h6 class="card-subtitle">Card subtitle</h6>
+						</div>
+						<div id="collapseTwo" class="collapse" data-parent="#accordion" >
+							<div class="card-body">Cliche reprehenderit</div>
+						</div>
+						<div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							<!--span class="icon-icon_social_person_outline accordion-icon"></span--> 
+							<a class="card-title" id="card-title-3">
+							  Item 3
+							</a>
+							<h6 class="card-subtitle">Card subtitle</h6>
+						</div>
+						<div id="collapseThree" class="collapse" data-parent="#accordion" >
+							<div class="card-body">Enim eiusmod</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!--script src="//code.jquery.com/jquery-1.11.1.min.js"></script-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
+	<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoic3MtYW5hbm5hIiwiYSI6ImNqbGx3YmswdzExd20zcXBhazA3MmV2MXMifQ.ayBvv58AIiPobO7ce70IfQ';
+	var map = new mapboxgl.Map({
+		container: 'map', // container id
+		style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
+		center: [90.3563, 23.6850], // starting position [lng, lat]
+		zoom: 6.5 // starting zoom
+	});
+	</script>
+  </body>
+</html>
